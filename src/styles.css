@@ -1,0 +1,23 @@
+h1 {
+  text-align: center;
+}
+
+i {
+  font-size: 60px;
+}
+
+.container {
+  border: 1px solid;
+  border-radius: 10px;
+  display: block;
+  margin: 15px auto;
+  padding: 0 15px 15px;
+}
+
+.col-8 {
+  text-align: center;
+}
+
+.card {
+  text-align: center;
+}

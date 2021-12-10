@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <html>
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous"
+      />
+      <script
+        src="https://kit.fontawesome.com/2aff1e5ddf.js"
+        crossorigin="anonymous"
+      ></script>
+      <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+      <title>Weather News</title>
+      <link rel="stylesheet" href="src/styles.css" />
+    </head>
+    <body>
+      <div class="container">
+        <hr />
+        <h1>The Weather</h1>
+        <hr />
+        <div class="row">
+          <div class="col">Warsaw</div>
+          <div class="col">Asunción</div>
+          <div class="col">Washington, DC</div>
+          <div class="col">Seattle</div>
+          <div class="col">Seoul</div>
+          <div class="col-3.5">
+            <form id="search">
+              <input type="submit" id="request-geolocation" value="📍" />
+              <input
+                type="text"
+                id="enter-city"
+                placeholder="Enter your city"
+              />
+              <input type="submit" id="search-city" value="🔍" />
+            </form>
+          </div>
+        </div>
+        <br />
+        <div class="row">
+          <div class="col-2">
+            <h4 id="city">WARSAW</h4>
+            <h5 id="day"></h5>
+            <h5 id="time"></h5>
+          </div>
+          <div class="col-8">
+            <i class="fas fa-cloud"></i>
+            <h5>Cloudy</h5>
+            <h4>
+              <span class="temperature" id="temperature">12</span>
+              <span class="units">
+                <a href="#" id="celsius-link">°C</a> |
+                <a href="#" id="fahrenheit-link">°F</a>
+              </span>
+            </h4>
+          </div>
+          <div class="col-2">
+            <h6><strong>13</strong> | 7°C</h6>
+            <h6>Precipitation: 2%</h6>
+            <h6>Humidity: 56%</h6>
+            <h6>Wind: 19 km/h</h6>
+          </div>
+        </div>
+        <hr />
+        <div class="row">
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Friday</h5>
+                <i class="fas fa-cloud"></i>
+                <p class="card-text"><strong>14</strong> | 6 °C</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Saturday</h5>
+                <i class="fas fa-cloud-sun"></i>
+                <p class="card-text"><strong>11</strong> | 6 °C</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Sunday</h5>
+                <i class="fas fa-cloud"></i>
+                <p class="card-text"><strong>11</strong> | 6 °C</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Monday</h5>
+                <i class="fas fa-cloud-sun"></i>
+                <p class="card-text"><strong>12</strong> | 7 °C</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Tuesday</h5>
+                <i class="fas fa-cloud"></i>
+                <p class="card-text"><strong>14</strong> | 10 °C</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="src/script.js"></script>
+    </body>
+  </html>
+</html>
