@@ -21,3 +21,8 @@ i {
 .card {
   text-align: center;
 }
+
+.codeLink {
+  font-size: 14px;
+  text-align: center;
+}
